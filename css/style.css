@@ -76,11 +76,11 @@ nav a:hover, nav a:focus{
 	z-index: 1;
 }
 
-.choice{
+#choice{
 	background-color: #000000;
 }
 
-.choice h1{
+#choice h1{
 	color: #FFFFFF;
 }
 
