@@ -1,18 +1,29 @@
-body{
-	font-family: 'adelle', Georgia, 'Times New Roman', serif;
-	text-align: center;
+/*Main*/
+body, h2, h3{
+	font-family: 'EB Garamond', serif;
+	background-color: #a8c6c6;
+	color:#525252;
 }
 
-p, a{
+h1, li{
+	font-family: 'Miniver', sans-serif;
+}
+p, a, li{
 	font-size: 1.5em;
+}
+
+h1{
+	color:#525252;
 }
 
 strong{
 	font-weight: 800;
+
 }
 
+/*header*/
+
 header{
-	background-color: #33CCCC;
 	padding-top: 2%;
 	padding-bottom: 2%;
 	margin-right: auto;
@@ -34,9 +45,10 @@ header{
 	
 }
 
+/*menu*/
 
 nav{
-    background-color: #000000;
+    background-color: #fc90a6;
     border:1px solid #ccc;
     border-width:1px 0;
     list-style:none;
@@ -56,14 +68,34 @@ nav a{
     width:125px;
     padding:10px;
 }
-nav a:active, nav a:visited{
+
+a:active, a:visited{
+	color:#FFFFFF;
+}
+
+a:hover, a:focus{
+	color:#a8c6c6;
+}
+
+.link{
+	color:#FFFFFF;
+}
+/*li a:active, li a:visited{
+	color:#FFFFFF;
+}
+
+li a:hover, li a:focus{
+	color:#a8c6c6;
+}*/
+/*nav a:active, nav a:visited{
 	color:#FFFFFF;
 }
 
 nav a:hover, nav a:focus{
-	color:#33CCCC;
-}
+	color:#a8c6c6;
+}*/
 
+/*Photos*/
 .img{
 	max-width:80px;
 	border-radius:10%;
@@ -72,17 +104,21 @@ nav a:hover, nav a:focus{
 
 
 .photos{
-	background-color: #CCFFFF;
+	background-color: #a8c6c6;
 	z-index: 1;
 }
 
+/*guides*/
 #choice{
-	background-color: #000000;
+	background-color: #fc90a6
 }
 
 #choice h1{
 	color: #FFFFFF;
+	font-size: 2em;
 }
+
+
 
 .solid{
 	border-top: 1px solid #ccc;
@@ -93,12 +129,61 @@ nav a:hover, nav a:focus{
 }
 
 .summary {
-	background-color: #CCFFFF;
-	border:1px solid #ccc;
+	/*background-color: #5efb8d;*/
+	border-bottom:1px solid #ccc;
     border-width:1px 0;
     text-align: left;
 }
 
+
+.highlight{
+	background-color: #fa5778;
+}
+
+#france, #italy, #spain{
+	display: none;
+	/*position: absolute;*/
+}
+
+button{
+	float: right;
+}
+
+
+/*faq*/
+
+#faq h3, #faq p { 
+	padding: 0 0 0 50px; 
+}
+
+#faq h3 { 
+	/*font-size:1.5em; */
+	/*color: #9d9d9d; */
+	cursor: pointer; height: 37px; 
+	line-height: 37px; 
+	margin: 0 0 15px 25px;
+}
+
+#faq p { 
+	font-size: 1.5em; 
+	margin: 0 0 20px 25px;
+}
+
+#faq h3 { 
+	background: url(http://www.designonslaught.com/files/2012/06/expand-icon.png) no-repeat left;
+}
+
+#faq .expanded { background: url(http://www.designonslaught.com/files/2012/06/expanded-icon.png) no-repeat left;
+}
+
+footer{
+	background-color: #fc90a6;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
 
 /*nav li:first-child a { 
    border-left: 1px dashed #ccc;
