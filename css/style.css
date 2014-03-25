@@ -67,15 +67,9 @@ nav a{
     display:inline-block;
     width:125px;
     padding:10px;
+    color:#FFFFFF;
 }
 
-a:active, a:visited{
-	color:#FFFFFF;
-}
-
-a:hover, a:focus{
-	color:#a8c6c6;
-}
 
 .link{
 	color:#FFFFFF;
@@ -118,7 +112,17 @@ nav a:hover, nav a:focus{
 	font-size: 2em;
 }
 
+#choice a {
+	color:#FFFFFF;
+}
 
+a:active, a:visited{
+	color:#FFFFFF;
+}
+
+a:hover, a:focus{
+	color:#a8c6c6;
+}
 
 .solid{
 	border-top: 1px solid #ccc;
