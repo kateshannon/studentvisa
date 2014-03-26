@@ -3,16 +3,20 @@
 /*Main Formatting*/
 body, h2, h3{
 	font-family: 'EB Garamond', serif;
-	background-color: #a8c6c6;
 	color:#525252;
 }
 
-h1, li{
-	font-family: 'Miniver', sans-serif;
+body {
+		background-color: #FFFFFF;
 }
-p, a, li{
+
+h1, li{
+	font-family: 'Raleway', sans-serif;
+}
+h1, p, a, li{
 	font-size: 1.5em;
 }
+
 
 a {
 	color:#FFFFFF;
@@ -23,7 +27,7 @@ a:active, a:visited{
 }
 
 a:hover, a:focus{
-	color:#a8c6c6;
+	color:#3f58c4;
 }
 
 
@@ -51,10 +55,10 @@ header{
 	text-align: center;
 }
 
-.header{
+/*.header{
 	color:#FFFFFF;
 
-}
+}*/
 
 .logo{
 	width:60%;
@@ -65,10 +69,15 @@ header{
 	
 }
 
+.title{
+	font-family: "Londrina Sketch", sans-serif;
+	font-size: 2.5em;
+}
+
 /*Menu*/
 
 nav{
-    background-color: #fc90a6;
+    background-color: #8d9cdc;
     border:1px solid #ccc;
     border-width:1px 0;
     list-style:none;
@@ -99,18 +108,23 @@ nav a{
 
 
 .photos{
-	background-color: #a8c6c6;
+	background-color: #FFFFFF;
 	z-index: 1;
 }
 
-/*Guides*/
+.display{
+	max-width: 875px;
+	display: block;
+	margin: auto;
+}
+
+/*Guides Menu*/
 #choice{
-	background-color: #fc90a6
+	background-color: #8d9cdc;
 }
 
 #choice h1{
 	color: #FFFFFF;
-	font-size: 1.5em;
 }
 
 
@@ -122,15 +136,22 @@ nav a{
 	border-left:1px dashed #ccc;
 }
 
+/*Guides*/
 .summary {
 	border-bottom:1px solid #ccc;
     border-width:1px 0;
     text-align: left;
+   	padding-left: 2rem; 
+	padding-left: 2rem}
+}
 }
 
+.summary h1{
+	font-size: 2.25em;
+}
 
 .highlight{
-	background-color: #fa5778;
+	background-color: #667ad0;
 }
 
 #france, #italy, #spain{
@@ -140,6 +161,11 @@ nav a{
 
 button{
 	float: right;
+	background-color:#667ad0;
+}
+
+button: hover, button: focus{
+	background-color: #3f58c4;
 }
 
 
@@ -171,7 +197,7 @@ button{
 
 /*Footer*/
 footer{
-	background-color: #fc90a6;
+	background-color:#8d9cdc;
 	padding-top: 2%;
 	padding-bottom: 2%;
 	margin-right: auto;
@@ -180,7 +206,17 @@ footer{
 }
 
 /*Media queries*/
-@media (min-width: 700px) {
-	#choice h1{font-size: 2em;}
+
+@media (min-width: 900px){
+	.summary{padding-left: 0; padding-left: 0}
+}
+@media (min-width: 641px) {
+	.title{font-size: 3.2em}
+	h2{font-size: 2em;}
+}
+
+@media (max-width: 450px){
+    #choice h1{font-size: 1em;}
+
 }
 
