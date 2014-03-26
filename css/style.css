@@ -162,9 +162,10 @@ nav a{
 button{
 	float: right;
 	background-color:#667ad0;
+	font-family: 'EB Garamond', serif;
 }
 
-button: hover, button: focus{
+button:hover, button:focus{
 	background-color: #3f58c4;
 }
 
